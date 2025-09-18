@@ -1,0 +1,18 @@
+CREATE TABLE users (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE stocks (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    ticker VARCHAR(255) NOT NULL UNIQUE,
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE stock_prices (
+    stock_id BIGINT NOT NULL,
+    price DOUBLE,
+    CONSTRAINT fk_stock FOREIGN KEY(stock_id) REFERENCES stocks(id)
+);

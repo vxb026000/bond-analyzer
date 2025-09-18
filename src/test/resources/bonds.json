@@ -1,0 +1,18 @@
+[
+  {
+    "isin": "US5555555555",
+    "maturityDate": "2035-12-31",
+    "couponRate": 0.06,
+    "faceValue": 1000,
+    "marketPrice": 920,
+    "couponsPerYear": 2
+  },
+  {
+    "isin": "US6666666666",
+    "maturityDate": "2036-12-31",
+    "couponRate": 0.08,
+    "faceValue": 1100,
+    "marketPrice": 990,
+    "couponsPerYear": 2
+  }
+]
